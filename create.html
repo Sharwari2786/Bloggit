@@ -45,6 +45,14 @@
     <p>Made by &hearts; Sharwari Kapse</p>
   </footer>
 
-  <script src="blog.js"></script>
+  <script>
+  const user = JSON.parse(localStorage.getItem("loggedInUser"));
+  if (!user) {
+    alert("Login is required to create a blog!");
+    window.location.href = "login.html";
+  }
+</script>
+
+<script src="blog.js"></script>
 </body>
 </html>

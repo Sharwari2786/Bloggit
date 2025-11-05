@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyBlog - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="logo.jpg" alt="MyBlog Logo" class="logo">
+      <h1>Bloggit</h1>
+    </div>
+    <nav>
+      <section class="trending-tabs">
+        <a href="index.html" class="tab active">Home</a>
+        <a href="create.html" class="tab">Create</a>
+        <a href="about.html" class="tab">About</a>
+        <a href="contact.html" class="tab">Contact</a>
+        <a href="login.html" class="tab">Login</a>
+      </section>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to <span>MyBlog</span></h2>
+    <p>Write, share, and inspire others through your stories.</p>
+    <a href="create.html" class="btn">Start Writing</a>
+  </section>
+
+  <!-- Blog Container -->
+  <section class="blog-container" id="blogContainer">
+    <!-- Default blogs (always visible) -->
+    <div class="blog-post">
+      <h3>The Principle of Beautiful Web Design</h3>
+      <p>Discover how web design blends creativity and logic to create digital experiences.</p>
+      <a href="post1.pdf" class="read-more">Read More</a>
+    </div>
+
+    <div class="blog-post">
+      <h3>Blogging</h3>
+      <p>Learn how to create and upload the blog using this blog.</p>
+      <a href="post2.pdf" class="read-more">Read More</a>
+    </div>
+
+    <div class="blog-post">
+      <h3>Introduction to Blogging</h3>js:59
+      All users: (1) [{…}]
+      auth.j
+      <p>Tips on how to manage your blogs and write effective content.</p>
+      <a href="post3.pdf" class="read-more">Read More</a>
+    </div>
+  </section>
+
+  <section class="about-preview">
+    <h3>About MyBlog</h3>
+    <p>
+      MyBlog is a simple yet powerful blogging platform built for students and beginners.
+      Our goal is to make writing and sharing thoughts easy, elegant, and inspiring.
+    </p>
+    <a href="about.html" class="btn-outline">Learn More</a>
+  </section>
+
+  <footer>
+    <p>© 2025 MyBlog | Created by Students Comoputer Technology, YCCE </p>
+    <p>Made by &hearts; Sharwari Kapse</p>
+    
+  </footer>
+
+  <script>
+    const user = JSON.parse(localStorage.getItem("loggedInUser"));
+    if (!user) {
+      alert("Please login first!");
+      window.location.href = "login.html";
+    }
+  </script>
+  <script src="blog.js"></script>
+
+</body>
+</html>

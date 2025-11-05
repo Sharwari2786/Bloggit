@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Blog - MyBlog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.jpg" alt="MyBlog Logo" class="logo">
+      <h1>Bloggit</h1>
+    </div>
+    <nav>
+      <section class="trending-tabs">
+        <a href="index.html" class="tab">Home</a>
+        <a href="create.html" class="tab active">Create</a>
+        <a href="about.html" class="tab">About</a>
+        <a href="contact.html" class="tab">Contact</a>
+        <a href="login.html" class="tab">Login</a>
+      </section>
+    </nav>
+  </header>
+
+  <section class="create-hero">
+    <h2>Create New Blog</h2>
+    <p>Share your thoughts, tutorials, or stories with the world.</p>
+  </section>
+
+  <section class="form-section">
+    <form id="blogForm">
+      <input type="text" id="blogTitle" placeholder="Blog Title" required>
+      <textarea id="blogContent" rows="8" placeholder="Write your blog content here..." required></textarea>
+      
+      <label>Add Media (optional):</label>
+      <input type="file" id="blogMedia" accept="image/,video/,application/pdf">
+      
+      <button type="submit">Publish</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 MyBlog | Created by Students of YCCE</p>
+    <p>Made by &hearts; Sharwari Kapse</p>
+  </footer>
+
+  <script src="blog.js"></script>
+</body>
+</html>
